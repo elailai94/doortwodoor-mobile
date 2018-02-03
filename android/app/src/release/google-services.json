@@ -1,0 +1,124 @@
+{
+  "project_info": {
+    "project_number": "1024981514647",
+    "firebase_url": "https://doortwodoor-7e677.firebaseio.com",
+    "project_id": "doortwodoor-7e677",
+    "storage_bucket": "doortwodoor-7e677.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024981514647:android:0c6c9d7675af3755",
+        "android_client_info": {
+          "package_name": "com.doortodoor.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024981514647-r4r481fbgss6u5cshlkpvlb0u93eptcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdILatllXDTJ4BjLQs3WokWkkonx7F8n0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024981514647:android:abd6b097734ca969",
+        "android_client_info": {
+          "package_name": "com.doortwodoor.android.development"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024981514647-adbeb1fi8978rrpong22ubtber6m0clm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.doortwodoor.android.development",
+            "certificate_hash": "59989f2a7fd1d35ba456a61961df836f6840779c"
+          }
+        },
+        {
+          "client_id": "1024981514647-r4r481fbgss6u5cshlkpvlb0u93eptcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdILatllXDTJ4BjLQs3WokWkkonx7F8n0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024981514647-r4r481fbgss6u5cshlkpvlb0u93eptcf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1024981514647-51bp0noni6eg94e2jekec9v40kc92s9v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.doortwodoor.ios.staging"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024981514647:android:323663c020b744f7",
+        "android_client_info": {
+          "package_name": "com.doortwodoor.android.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024981514647-r4r481fbgss6u5cshlkpvlb0u93eptcf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdILatllXDTJ4BjLQs3WokWkkonx7F8n0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
