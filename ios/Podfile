@@ -13,4 +13,6 @@ target 'doortwodoor' do
   # React Native Firebase optional pods
   pod 'Firebase/Auth'
   pod 'Firebase/Crash'
+  pod 'Fabric', '~> 1.7.2'
+  pod 'Crashlytics', '~> 3.9.3'
 end
