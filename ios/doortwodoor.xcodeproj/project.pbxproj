@@ -704,6 +704,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				780EE311162FADD541A02BE9 /* [CP] Embed Pods Frameworks */,
 				15A37DEACF9A9170823DE973 /* [CP] Copy Pods Resources */,
+				F66C5C2C20259ABD00223E17 /* Upload Symbol Files */,
 			);
 			buildRules = (
 			);
@@ -1245,7 +1246,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to debug, staging and release versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEBUG=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Debug/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_STAGING=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Staging/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_RELEASE=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Release/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the debug version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEBUG}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEBUG ]\nthen\necho \"No Debug GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the staging version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_STAGING}\"\nif [ ! -f $GOOGLESERVICE_INFO_STAGING ]\nthen\necho \"No Staging GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the release version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_RELEASE}\"\nif [ ! -f $GOOGLESERVICE_INFO_RELEASE ]\nthen\necho \"No Release GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the prod GoogleService-Info.plist for Release builds\nif [ \"${CONFIGURATION}\" == \"Debug\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_DEBUG}\"\ncp \"${GOOGLESERVICE_INFO_DEBUG}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Staging\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_STAGING}\"\ncp \"${GOOGLESERVICE_INFO_STAGING}\" \"${PLIST_DESTINATION}\"\nelse\necho \"Using ${GOOGLESERVICE_INFO_RELEASE}\"\ncp \"${GOOGLESERVICE_INFO_RELEASE}\" \"${PLIST_DESTINATION}\"\nfi\n";
+			shellScript = "# Name of the resource we're selectively copying\nGOOGLESERVICE_INFO_PLIST=GoogleService-Info.plist\n\n# Get references to debug, staging and release versions of the GoogleService-Info.plist\n# NOTE: These should only live on the file system and should NOT be part of the target (since we'll be adding them to the target manually)\nGOOGLESERVICE_INFO_DEBUG=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Debug/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_STAGING=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Staging/${GOOGLESERVICE_INFO_PLIST}\nGOOGLESERVICE_INFO_RELEASE=${PROJECT_DIR}/${TARGET_NAME}/Configurations/Release/${GOOGLESERVICE_INFO_PLIST}\n\n# Make sure the debug version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_DEBUG}\"\nif [ ! -f $GOOGLESERVICE_INFO_DEBUG ]\nthen\necho \"No Debug GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the staging version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_STAGING}\"\nif [ ! -f $GOOGLESERVICE_INFO_STAGING ]\nthen\necho \"No Staging GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Make sure the release version of GoogleService-Info.plist exists\necho \"Looking for ${GOOGLESERVICE_INFO_PLIST} in ${GOOGLESERVICE_INFO_RELEASE}\"\nif [ ! -f $GOOGLESERVICE_INFO_RELEASE ]\nthen\necho \"No Release GoogleService-Info.plist found. Please ensure it's in the proper directory.\"\nexit 1\nfi\n\n# Get a reference to the destination location for the GoogleService-Info.plist\nPLIST_DESTINATION=${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app\necho \"Will copy ${GOOGLESERVICE_INFO_PLIST} to final destination: ${PLIST_DESTINATION}\"\n\n# Copy over the respective GoogleService-Info.plist for Debug, Staging and Release builds\nif [ \"${CONFIGURATION}\" == \"Debug\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_DEBUG}\"\ncp \"${GOOGLESERVICE_INFO_DEBUG}\" \"${PLIST_DESTINATION}\"\nelif [ \"${CONFIGURATION}\" == \"Staging\" ]\nthen\necho \"Using ${GOOGLESERVICE_INFO_STAGING}\"\ncp \"${GOOGLESERVICE_INFO_STAGING}\" \"${PLIST_DESTINATION}\"\nelse\necho \"Using ${GOOGLESERVICE_INFO_RELEASE}\"\ncp \"${GOOGLESERVICE_INFO_RELEASE}\" \"${PLIST_DESTINATION}\"\nfi\n";
+		};
+		F66C5C2C20259ABD00223E17 /* Upload Symbol Files */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Upload Symbol Files";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"${CONFIGURATION}\" == \"Debug\" ]\nthen\nGOOGLE_APP_ID=1:1024981514647:ios:e06848f106112b22\nelif [ \"${CONFIGURATION}\" == \"Staging\" ]\nthen\nGOOGLE_APP_ID=1:1024981514647:ios:5994f40d8da9ecb5\nelse\nGOOGLE_APP_ID=1:1024981514647:ios:636343e19c20fa04\nfi\n\n\"${PODS_ROOT}\"/FirebaseCrash/upload-sym-util.bash \"/Users/elishalai/Downloads/doortwodoor-7e677-firebase-crashreporting-40uxb-bec6573148.json\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
