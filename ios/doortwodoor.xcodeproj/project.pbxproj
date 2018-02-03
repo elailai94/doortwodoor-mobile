@@ -344,28 +344,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = doortwodoor/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = doortwodoor/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1CD7FE6B3CCF1370D6B1171D /* Pods-doortwodoor-tvOSTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor-tvOSTests.production.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor-tvOSTests/Pods-doortwodoor-tvOSTests.production.xcconfig"; sourceTree = "<group>"; };
-		2163407E6EA1062ED163F06F /* libPods-doortwodoor-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doortwodoor-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		23C2C7A0FCAF9DBEFC92CFD6 /* Pods-doortwodoor-tvOSTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor-tvOSTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor-tvOSTests/Pods-doortwodoor-tvOSTests.development.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* doortwodoor-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "doortwodoor-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* doortwodoor-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "doortwodoor-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		42482E143210D67A2FDA92D8 /* Pods-doortwodoor-tvOS.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor-tvOS.development.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor-tvOS/Pods-doortwodoor-tvOS.development.xcconfig"; sourceTree = "<group>"; };
 		5814E6B4AF05923B2742AC3C /* Pods-doortwodoor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor.release.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor/Pods-doortwodoor.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6129C8B5D3347E0B8B10372B /* Pods-doortwodoor.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor.staging.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor/Pods-doortwodoor.staging.xcconfig"; sourceTree = "<group>"; };
-		624A542FC4507F3B227FAEC8 /* Pods-doortwodoorTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoorTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoorTests/Pods-doortwodoorTests.development.xcconfig"; sourceTree = "<group>"; };
-		707A68BAD438EE85F7C3EB04 /* libPods-doortwodoor-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doortwodoor-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		7DF8DE905433ED318896D6F2 /* libPods-doortwodoor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doortwodoor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8152037D1A72032B8CB43750 /* Pods-doortwodoor.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor.production.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor/Pods-doortwodoor.production.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-		934B336150D5F680C21B8103 /* Pods-doortwodoorTests.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoorTests.production.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoorTests/Pods-doortwodoorTests.production.xcconfig"; sourceTree = "<group>"; };
-		A5CFC8EAF71DF05F67BB554C /* Pods-doortwodoor-tvOS.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor-tvOS.production.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor-tvOS/Pods-doortwodoor-tvOS.production.xcconfig"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		B760000CC1F7F6E024679850 /* libPods-doortwodoorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-doortwodoorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DDE7380ADD325FEFB9C7CB /* Pods-doortwodoor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor/Pods-doortwodoor.debug.xcconfig"; sourceTree = "<group>"; };
-		BED97F5E7C291D943B6BE131 /* Pods-doortwodoor.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-doortwodoor.development.xcconfig"; path = "Pods/Target Support Files/Pods-doortwodoor/Pods-doortwodoor.development.xcconfig"; sourceTree = "<group>"; };
 		C6E577E50C294BA98BBABFCA /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		F87DCD5E10AD49B5AC7B48B3 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -547,9 +536,6 @@
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 				7DF8DE905433ED318896D6F2 /* libPods-doortwodoor.a */,
-				2163407E6EA1062ED163F06F /* libPods-doortwodoor-tvOS.a */,
-				707A68BAD438EE85F7C3EB04 /* libPods-doortwodoor-tvOSTests.a */,
-				B760000CC1F7F6E024679850 /* libPods-doortwodoorTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -642,14 +628,6 @@
 			children = (
 				B7DDE7380ADD325FEFB9C7CB /* Pods-doortwodoor.debug.xcconfig */,
 				5814E6B4AF05923B2742AC3C /* Pods-doortwodoor.release.xcconfig */,
-				BED97F5E7C291D943B6BE131 /* Pods-doortwodoor.development.xcconfig */,
-				8152037D1A72032B8CB43750 /* Pods-doortwodoor.production.xcconfig */,
-				42482E143210D67A2FDA92D8 /* Pods-doortwodoor-tvOS.development.xcconfig */,
-				A5CFC8EAF71DF05F67BB554C /* Pods-doortwodoor-tvOS.production.xcconfig */,
-				23C2C7A0FCAF9DBEFC92CFD6 /* Pods-doortwodoor-tvOSTests.development.xcconfig */,
-				1CD7FE6B3CCF1370D6B1171D /* Pods-doortwodoor-tvOSTests.production.xcconfig */,
-				624A542FC4507F3B227FAEC8 /* Pods-doortwodoorTests.development.xcconfig */,
-				934B336150D5F680C21B8103 /* Pods-doortwodoorTests.production.xcconfig */,
 				6129C8B5D3347E0B8B10372B /* Pods-doortwodoor.staging.xcconfig */,
 			);
 			name = Pods;
