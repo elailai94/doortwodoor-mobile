@@ -14,10 +14,13 @@
  * @module Profile
  */
 
+import {
+  Container,
+  Content,
+} from 'native-base';
 import React, { Component } from 'react';
 
-import { ProfilePicture } from '../components';
-import { View } from 'react-native';
+import { ProfileHeader } from '../components';
 
 /**
  * Class representing a profile.
@@ -29,9 +32,20 @@ class Profile extends Component {
   /** Returns the component to be rendered. */
   render() {
     return (
-      <View>
-        <ProfilePicture source={{ uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png' }} />
-      </View>
+      <Container>
+        <Content>
+          <ProfileHeader
+            profilePicture={{
+              uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'
+            }}
+            profileStatistics={{
+              duration: { length: 1, unit: 'year' },
+              moves: 200,
+              rating: 4.49,
+            }}
+          />
+        </Content>
+      </Container>
     );
   }
 }

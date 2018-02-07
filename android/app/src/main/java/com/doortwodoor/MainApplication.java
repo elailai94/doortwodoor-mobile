@@ -1,7 +1,5 @@
 package com.doortwodoor;
 
-import android.app.Application;
-
 import com.facebook.react.ReactPackage;
 import com.reactnativenavigation.NavigationApplication;
 
@@ -15,7 +13,7 @@ import io.invertase.firebase.perf.RNFirebasePerformancePackage;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainApplication extends Application implements NavigationApplication {
+public class MainApplication extends NavigationApplication {
 
   @Override
   public boolean isDebug() {

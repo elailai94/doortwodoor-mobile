@@ -14,6 +14,12 @@
  * @module ProfileComponents
  */
 
+import ProfileHeader from './ProfileHeader';
 import ProfilePicture from './ProfilePicture';
+import ProfileStatistics from './ProfileStatistics';
 
-export { ProfilePicture };
+export {
+  ProfileHeader,
+  ProfilePicture,
+  ProfileStatistics,
+};
