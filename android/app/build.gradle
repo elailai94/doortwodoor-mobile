@@ -201,6 +201,9 @@ dependencies {
     // React Native Navigation required dependencies
     compile project(':react-native-navigation')
 
+    // React Native Vector Icons required dependencies
+    compile project(':react-native-vector-icons')
+
     // React Native required dependencies
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"

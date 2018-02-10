@@ -50,4 +50,9 @@ class Profile extends Component {
   }
 }
 
+Profile.navigatorStyle = {
+  navBarBackgroundColor: 'skyblue',
+  navBarNoBorder: true,
+};
+
 export default Profile;

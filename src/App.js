@@ -88,7 +88,6 @@ Navigation.startTabBasedApp({
     {
       label: 'Profile',
       screen: 'doortwodoor.Profile',
-      title: 'Profile',
     },
     {
       label: 'Sign Up',

@@ -22,6 +22,7 @@ import {
 import React, { Component } from 'react';
 
 import ProfileStatisticsDurationPropType from './ProfileStatisticsDurationPropType';
+import ProfileStatisticsItem from './ProfileStatisticsItem';
 import PropTypes from 'prop-types';
 
 /**
@@ -31,6 +32,7 @@ import PropTypes from 'prop-types';
  * @memberof ProfileStatistics
  */
 class ProfileStatistics extends Component {
+  /** Returns the component to be rendered. */
   render() {
     const {
       duration,
@@ -41,21 +43,31 @@ class ProfileStatistics extends Component {
       length,
       unit,
     } = duration;
+    const statisticItems = [
+      { icon: 'ios-star', label: 'rating', value: rating },
+      { icon: 'ios-home', label: 'moves', value: moves },
+      { icon: 'ios-clock', label: unit, value: length },
+    ];
 
     return (
       <Grid>
-        <Col>
-          <Text>{rating}</Text>
-          <Text>Rating</Text>
-        </Col>
-        <Col>
-          <Text>{moves}</Text>
-          <Text>Moves</Text>
-        </Col>
-        <Col>
-          <Text>{length}</Text>
-          <Text>{unit[0].toUpperCase() + unit.substring(1)}</Text>
-        </Col>
+        {statisticItems.map(statisticItem => {
+          const {
+            icon,
+            label,
+            value,
+          } = statisticItem;
+          const key = 'key';
+
+          return (
+            <ProfileStatisticsItem
+              key={label}
+              icon={icon}
+              label={label}
+              value={value}
+            />
+          );
+        })}
       </Grid>
     );
   }

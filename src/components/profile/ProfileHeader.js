@@ -15,6 +15,12 @@
  */
 
 import {
+  Col,
+  Grid,
+  Row,
+  Text,
+} from 'native-base';
+import {
   Image,
   StyleSheet,
   View,
@@ -24,7 +30,6 @@ import React, { Component } from 'react';
 import ProfilePicture from './ProfilePicture';
 import ProfileStatistics from './ProfileStatistics';
 import PropTypes from 'prop-types';
-import { Text } from 'native-base';
 
 /**
  * Class representing a profile header.
@@ -46,16 +51,27 @@ class ProfileHeader extends Component {
     } = profileStatistics;
 
     return (
-      <View style={styles.profileHeader}>
-        <ProfilePicture source={profilePicture} />
-        <Text>Elisha</Text>
-        <Text>Waterloo, Canada</Text>
-        <ProfileStatistics
-          duration={duration}
-          moves={moves}
-          rating={rating}
-        />
-      </View>
+      <Grid style={styles.profileHeader}>
+        <Row>
+          <Col
+            size={1}
+            style={styles.col}
+          >
+            <ProfilePicture source={profilePicture} />
+          </Col>
+          <Col size={2}>
+            <Text style={styles.text}>Elisha</Text>
+            <Text style={styles.text}>Waterloo, Canada</Text>
+          </Col>
+        </Row>
+        <Row>
+          <ProfileStatistics
+            duration={duration}
+            moves={moves}
+            rating={rating}
+          />
+        </Row>
+      </Grid>
     );
   }
 }
@@ -78,8 +94,14 @@ ProfileHeader.propTypes = {
  * @readonly
  */
 const styles = StyleSheet.create({
-  profileHeader: {
+  col: {
     alignItems: 'center',
+  },
+  profileHeader: {
+    backgroundColor: 'skyblue',
+  },
+  text: {
+    color: 'white',
   },
 });
 

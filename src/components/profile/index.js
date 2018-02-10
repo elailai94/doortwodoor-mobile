@@ -17,9 +17,11 @@
 import ProfileHeader from './ProfileHeader';
 import ProfilePicture from './ProfilePicture';
 import ProfileStatistics from './ProfileStatistics';
+import ProfileStatisticsItem from './ProfileStatisticsItem';
 
 export {
   ProfileHeader,
   ProfilePicture,
   ProfileStatistics,
+  ProfileStatisticsItem,
 };

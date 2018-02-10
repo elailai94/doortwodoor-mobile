@@ -1,6 +1,7 @@
 package com.doortwodoor;
 
 import com.facebook.react.ReactPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
 import com.reactnativenavigation.NavigationApplication;
 
 import io.invertase.firebase.RNFirebasePackage;
@@ -27,7 +28,8 @@ public class MainApplication extends NavigationApplication {
       new RNFirebaseAuthPackage(),
       new RNFirebaseCrashPackage(),
       new RNFirebaseCrashlyticsPackage(),
-      new RNFirebasePerformancePackage()
+      new RNFirebasePerformancePackage(),
+      new VectorIconsPackage()
     );
   }
 
