@@ -20,7 +20,7 @@ import {
   Row,
   Text,
 } from 'native-base';
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import {
   iOSColors,
   iOSUIKit,
@@ -33,10 +33,10 @@ import { capitalise } from '../../utilities';
 /**
  * Class representing profile statistics item.
  *
- * @extends Component
+ * @extends PureComponent
  * @memberof ProfileStatisticsItem
  */
-class ProfileStatisticsItem extends Component {
+class ProfileStatisticsItem extends PureComponent {
   /** Returns the component to be rendered. */
   render() {
     const {
@@ -54,7 +54,7 @@ class ProfileStatisticsItem extends Component {
           />
           <Text style={styles.value}>{value}</Text>
         </Row>
-        <Row stlye={styles.row}>
+        <Row style={styles.row}>
           <Text style={styles.label}>{capitalise(label)}</Text>
         </Row>
       </Col>

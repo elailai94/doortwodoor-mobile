@@ -14,7 +14,9 @@
  * @module String
  */
 
- /**
+import ShortID from 'shortid';
+
+/**
   * Capitalises the first character of a string.
   * 
   * @memberof String
@@ -30,4 +32,17 @@ function capitalise(string) {
   return `${first.toUpperCase()}${rest.join('').toLowerCase()}`;
 }
 
-export { capitalise };
+/**
+ * Generates a non-sequential, short and unique ID.
+ * 
+ * @memberof String
+ * @public
+ */
+function generateID() {
+  return ShortID.generate();
+}
+
+export {
+  capitalise,
+  generateID,
+};

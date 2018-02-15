@@ -18,7 +18,6 @@ import {
   Col,
   Grid,
   Row,
-  Text,
 } from 'native-base';
 import {
   Image,
@@ -27,6 +26,8 @@ import {
 } from 'react-native';
 import React, { Component } from 'react';
 
+import ProfileLocation from './ProfileLocation';
+import ProfileName from './ProfileName';
 import ProfilePicture from './ProfilePicture';
 import ProfileStatistics from './ProfileStatistics';
 import PropTypes from 'prop-types';
@@ -41,9 +42,19 @@ class ProfileHeader extends Component {
   /** Returns the component to be rendered. */
   render() {
     const {
+      profileLocation,
+      profileName,
       profilePicture,
       profileStatistics,
     } = this.props;
+    const {
+      city,
+      country,
+    } = profileLocation;
+    const {
+      firstName,
+      lastName,
+    } = profileName;
     const {
       duration,
       moves,
@@ -59,9 +70,15 @@ class ProfileHeader extends Component {
           >
             <ProfilePicture source={profilePicture} />
           </Col>
-          <Col size={2}>
-            <Text style={styles.text}>Elisha</Text>
-            <Text style={styles.text}>Waterloo, Canada</Text>
+          <Col size={2} style={{ justifyContent: 'center' }}>
+            <ProfileName
+              firstName={firstName}
+              lastName={lastName}
+            />
+            <ProfileLocation
+              city={city}
+              country={country}
+            />
           </Col>
         </Row>
         <Row>
@@ -83,6 +100,8 @@ class ProfileHeader extends Component {
  * @readonly
  */
 ProfileHeader.propTypes = {
+  profileLocation: PropTypes.shape(ProfileLocation.propTypes),
+  profileName: PropTypes.shape(ProfileName.propTypes),
   profilePicture: Image.propTypes.source,
   profileStatistics: PropTypes.shape(ProfileStatistics.propTypes),
 };
@@ -99,9 +118,6 @@ const styles = StyleSheet.create({
   },
   profileHeader: {
     backgroundColor: 'skyblue',
-  },
-  text: {
-    color: 'white',
   },
 });
 

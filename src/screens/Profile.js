@@ -17,6 +17,8 @@
 import {
   Container,
   Content,
+  Tab,
+  Tabs,
 } from 'native-base';
 import React, { Component } from 'react';
 
@@ -35,6 +37,14 @@ class Profile extends Component {
       <Container>
         <Content>
           <ProfileHeader
+            profileLocation={{
+              city: 'Waterloo',
+              country: 'Canada',
+            }}
+            profileName={{
+              firstName: 'Elisha',
+              lastName: 'Lai',
+            }}
             profilePicture={{
               uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'
             }}
@@ -44,6 +54,10 @@ class Profile extends Component {
               rating: 4.49,
             }}
           />
+          <Tabs>
+            <Tab heading={'Info'} />
+            <Tab heading={'Reviews'} />
+          </Tabs>
         </Content>
       </Container>
     );

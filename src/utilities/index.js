@@ -14,6 +14,12 @@
  * @module Utilities
  */
 
-import { capitalise } from './String';
+import {
+  capitalise,
+  generateID,
+} from './String';
 
-export { capitalise };
+export {
+  capitalise,
+  generateID,
+};

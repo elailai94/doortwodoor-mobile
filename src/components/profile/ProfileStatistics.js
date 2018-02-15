@@ -24,6 +24,7 @@ import React, { Component } from 'react';
 import ProfileStatisticsDurationPropType from './ProfileStatisticsDurationPropType';
 import ProfileStatisticsItem from './ProfileStatisticsItem';
 import PropTypes from 'prop-types';
+import { generateID } from '../../utilities';
 
 /**
  * Class representing profile statistics.
@@ -57,11 +58,11 @@ class ProfileStatistics extends Component {
             label,
             value,
           } = statisticItem;
-          const key = 'key';
+          const key = generateID();
 
           return (
             <ProfileStatisticsItem
-              key={label}
+              key={key}
               icon={icon}
               label={label}
               value={value}
